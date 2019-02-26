@@ -4,11 +4,13 @@ class Redirect extends Component {
 
     componentDidMount() {
       this.timeOut = setTimeout(() => {
-        // window.location = 'https://web.ci.consumer.underpaid.com/wizards/choose.aspx';
+        console.log("sadfdf")
+        window.location = 'https://web.ci.consumer.underpaid.com/wizards/choose.aspx';
       }, 5000);
     }
 
     componentWillUnmount() {
+      console.log("asasdfasADSD")
       clearTimeout(this.timeOut);
     }
 
